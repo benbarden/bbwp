@@ -1,4 +1,5 @@
 .idea
+.vagrant
 downloads
 wp-admin
 wp-includes
@@ -11,6 +12,7 @@ wp-content/uploads
 db.sql
 index.php
 license.txt
+ubuntu-bionic-18.04-cloudimg-console.log
 wp-activate.php
 wp-blog-header.php
 wp-comments-post.php
