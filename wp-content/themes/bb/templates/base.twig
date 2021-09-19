@@ -1,0 +1,53 @@
+{% block html_head_container %}
+
+{% include 'html-header.twig' %}
+	{% block head %}
+	{% endblock %}
+	</head>
+{% endblock %}
+
+	<body class="{{ body_class }}" data-template="base.twig">
+
+		<a class="skip-link screen-reader-text" href="#content">{{ _e( 'Skip to content') }}</a>
+
+		<header class="header">
+			{% block header %}
+				<div class="wrapper title-area">
+					<h1 class="site-title" role="banner">
+						<a href="{{ site.url }}" rel="home">{{ site.name }}</a>
+					</h1>
+					<div class="site-description">{{ site.description }}</div>
+				</div>
+			{% endblock %}
+		</header>
+
+		<nav id="nav-main" class="nav-main" role="navigation">
+			{% include "menu.twig" with {'items': menu.get_items} %}
+		</nav>
+
+		<div class="content-sidebar-wrap">
+			<main id="content" role="main" class="content-wrapper">
+				{% if title %}<h1>{{ title }}</h1>{% endif %}
+				<div class="wrapper {{ sidebar_class }}">
+					{% block content %}
+						There aren't any posts!
+					{% endblock %}
+				</div>
+			</main>
+			{% if sidebar %}
+				<aside class="layout-sidebar">
+					<div class="sidebar-content">
+						{{ sidebar }}
+					</div>
+				</aside>
+			{% endif %}
+		</div>
+
+		{% block footer %}
+			<footer id="footer">
+				{% include 'footer.twig' %}
+			</footer>
+			{{ function('wp_footer') }}
+		{% endblock %}
+	</body>
+</html>

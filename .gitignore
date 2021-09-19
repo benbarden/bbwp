@@ -1,3 +1,4 @@
+.DS_Store
 .idea
 .vagrant
 downloads
@@ -5,7 +6,13 @@ wp-admin
 wp-includes
 wp-content/languages
 wp-content/plugins
-wp-content/themes
+wp-content/themes/index.php
+wp-content/themes/cafe-pro
+wp-content/themes/daily-dish-pro
+wp-content/themes/genesis
+wp-content/themes/twentynineteen
+wp-content/themes/twentytwenty
+wp-content/themes/twentytwentyone
 wp-content/upgrade
 wp-content/uploads
 .htaccess

@@ -1,0 +1,34 @@
+{% extends "tease.twig" %}
+
+{% block content %}
+	<div class="tease-wrapper">
+		<div class="tease-post">
+			<div class="tease-meta">
+				<div class="meta-body">
+					<div class="badge category blue">
+						<div>
+							<a href="{{ post.category.link }}">
+								{{ post.category }}
+							</a>
+							{#
+							{{ post.terms('category') | join(', ') }}
+							#}
+						</div>
+					</div>
+					<div class="badge meta">
+						<time datetime="{{ post.date|date('Y-m-d H:i:s') }}">{{ post.date }}</time>
+						<span>&bull;</span>
+						<a href="{{ post.author.path }}">{{ post.author.name }}</a>
+					</div>
+				</div>
+			</div>
+			<div class="tease-body">
+				<h2 class="h2"><a href="{{ post.link }}">{{ post.title }}</a></h2>
+				<p>{{ post.preview.length(60) }}</p>
+				{% if post.thumbnail.src %}
+					<img src="{{ post.thumbnail.src }}" />
+				{% endif %}
+			</div>
+		</div>
+	</div>
+{% endblock %}

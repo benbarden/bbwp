@@ -1,0 +1,13 @@
+<h2>Recent posts</h2>
+{% if RecentPosts %}
+    <div class="sidebar-recent-posts">
+        {% for post in RecentPosts %}
+            <div class="post-item">
+                <a href="{{ post.link }}">{{ post.title }}</a>
+                <br><span class="meta">
+                    <time datetime="{{ post.date|date('Y-m-d H:i:s') }}">{{ post.date }}</time>
+                </span>
+            </div>
+        {% endfor %}
+    </div>
+{% endif %}
