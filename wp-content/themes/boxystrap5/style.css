@@ -230,6 +230,10 @@ nav#nav-main .menu-wrapper ul li a {
     padding: 15px 15px 15px 30px;
 }
 
+.main-outer div .main-inner .wrapper .page-wrapper .article-content .article-body figure img {
+    height: auto; max-width: 100%;
+}
+
 /* SIDEBAR */
 .layout-sidebar {
     background: #ffffd4;
