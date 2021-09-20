@@ -7,6 +7,6 @@
  */
 
 $context = array();
-$recentPostsArgs = ['numberposts' => 5];
+$recentPostsArgs = ['numberposts' => 10];
 $context['RecentPosts'] = new Timber\PostQuery($recentPostsArgs);
 Timber::render( array( 'sidebar.twig' ), $context );
