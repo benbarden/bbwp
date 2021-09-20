@@ -1,0 +1,259 @@
+/*
+ * Theme Name: Boxystrap 5
+ * Description: Timber theme with Bootstrap 5
+ * Author: Ben Barden
+*/
+
+body {
+    font-family: 'Crimson Text', sans-serif;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+    font-family: 'Dosis', sans-serif;
+}
+
+h1 {font-size: 180%;}
+h2 {font-size: 160%;}
+h3 {font-size: 140%;}
+h4 {font-size: 120%;}
+h5 {font-size: 100%;}
+h6 {font-size: 80%;}
+
+/* HEADER */
+
+header {
+    background-color: #ccc;
+    background-image: url('/wp-content/uploads/2015/08/img_1344.jpg');
+    background-attachment: fixed;
+    background-position: 50% 0px;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 30px 0;
+    text-align: center;
+}
+.title-area {
+    background-color: #000;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 0px 10px #000;
+    display: inline-block;
+    margin: 80px auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: auto;
+}
+.site-title, .site-description {
+    font-family: 'Dosis', sans-serif;
+    margin-bottom: 0;
+}
+.site-title a, .site-title a:focus, .site-title a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.site-title {
+    border-bottom: 1px solid #fff;
+    font-size: 240%;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+    padding: 8px 30px 4px;
+}
+.site-description {
+    color: #fff;
+    font-size: 80%;
+    font-weight: 600;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    padding: 8px 30px 10px;
+}
+
+/* NAV */
+nav#nav-main {
+    background: #fff;
+    border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+    margin: 0 auto 5px auto;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav#nav-main .menu-wrapper {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+nav#nav-main .menu-wrapper ul {
+    clear: both;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+nav#nav-main .menu-wrapper ul li {
+    display: inline-block;
+    float: none;
+    font-family: 'Dosis', sans-serif;
+    font-size: 80%;
+    font-weight: bold;
+    letter-spacing: 2px;
+    list-style-type: none;
+    margin-left: 40px;
+    text-transform: uppercase;
+}
+
+nav#nav-main .menu-wrapper ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* PAGINATION */
+
+.pagination-block {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pagination-block ul.pagination {
+    display: inline;
+}
+
+.pagination-block ul.pagination li {
+    float: left;
+    list-style-type: none;
+    margin: 0 10px;
+}
+
+/* CONTENT */
+
+.main-outer {
+    padding: 10px;
+    max-width: 99%;
+}
+
+.main-inner {
+    background: #efefef;
+    color: #000;
+    padding: 5px 20px 5px 20px;
+}
+
+.main-inner .wrapper {
+    background: #efefef;
+}
+
+.tease-wrapper {
+    background: #ffffff;
+    border: 1px solid #000;
+    margin-top: 20px;
+}
+
+.tease-post {
+}
+
+.tease-post .tease-body {
+    padding: 20px 20px 10px 20px;
+}
+
+.tease-post .tease-body h2.h2 {
+}
+
+.tease-post .tease-body h2.h2 a {
+    color: #000;
+    text-decoration: none;
+}
+
+.tease-post .tease-meta {
+    border-bottom: 1px solid #000;
+    padding: 5px 20px 5px 20px;
+}
+
+.tease-post .tease-meta .meta-body {
+}
+
+.tease-post .tease-meta .meta-body .badge.blue {
+    background-color: #9cf;
+}
+.tease-post .tease-meta .meta-body .badge.category {
+    font-family: 'Dosis', sans-serif;
+    font-size: 80%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.tease-post .tease-meta .meta-body .badge.category div a {
+    color: #000;
+}
+.tease-post .tease-meta .meta-body .badge.meta {
+    font-family: 'Crimson Text', sans-serif;
+    font-size: 90%;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.tease-post .tease-meta .meta-body .badge {
+    border: none;
+    border-radius: 16px;
+    color: #000;
+    display: inline-block;
+    margin: 4px 2px;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.tease-post .tease-meta .meta-body .date-author {
+    font-family: 'Crimson Text', sans-serif;
+    font-size: 90%;
+    font-style: italic;
+    font-weight: 400;
+    border: none;
+    border-radius: 16px;
+    color: #000;
+    display: inline-block;
+    margin: 4px 2px;
+    padding: 0px 20px;
+    text-align: right;
+    text-decoration: none;
+
+}
+
+/* ARTICLE PAGE */
+.main-outer div .main-inner .wrapper .page-wrapper .article-content {
+    background: #fefefe;
+    border: 1px solid #000;
+    line-height: 1.8em;
+    margin: 10px 0 10px 0;
+    padding: 15px 15px 15px 30px;
+}
+
+/* SIDEBAR */
+.layout-sidebar {
+    background: #ffffd4;
+}
+
+.layout-sidebar .sidebar-content {
+    padding: 10px;
+}
+
+.sidebar-recent-posts .post-item {
+    margin: 0 0 20px 0;
+}
+
+.sidebar-recent-posts .post-item .meta {
+    font-size: 90%;
+    font-style: italic;
+}
+
+/* FOOTER */
+footer#footer {
+    background: #99ccff;
+    clear: both;
+    padding: 10px 10px 10px 60px;
+}
+
+/* SOCIAL */
+.obfx-sharing * {width: 40px !important;}
